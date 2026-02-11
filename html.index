@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Yogita!</title>
+    <style>
+        :root {
+            --ocean-blue: #1e90ff;
+            --soft-white: #f0f8ff;
+            --accent-pink: #ff69b4;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #87CEEB 0%, #1E90FF 100%);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Aesthetic Image Header */
+        .profile-frame {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            overflow: hidden;
+            margin-top: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Funny Section */
+        .funny-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 10px;
+            width: 85%;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .vibe-meter {
+            background: #eee;
+            border-radius: 20px;
+            height: 20px;
+            width: 100%;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .vibe-fill {
+            background: var(--accent-pink);
+            height: 100%;
+            width: 99.9%; /* Because nobody is perfect, but Yogita is close */
+            animation: grow 2s ease-out;
+        }
+
+        @keyframes grow {
+            from { width: 0; }
+            to { width: 99.9%; }
+        }
+
+        .btn-funny {
+            background: white;
+            color: var(--ocean-blue);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: auto;
+            padding-bottom: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-frame">
+            <img src="https://ibb.co/ynBMN9mk" alt="Birthday Girl">
+        </div>
+
+        <h1>Happy Birthday, Yogita! 🎂</h1>
+        <p class="subtitle">"Saree Queen & Sunglasses Icon"</p>
+
+        <div class="funny-card">
+            <h3>📊 Official Birthday Stats</h3>
+            <p><strong>Age:</strong> Level Pending 🆙</p>
+            <p><strong>Saree Swag:</strong> 100%</p>
+            <p><strong>Ability to find sunglasses in the dark:</strong> Legendary</p>
+            
+            <p>Vibe Check Level:</p>
+            <div class="vibe-meter">
+                <div class="vibe-fill"></div>
+            </div>
+            <p><small>Error 404: Too much beauty detected</small></p>
+        </div>
+
+        <button class="btn-funny" onclick="alert('Treat Pending 🍟')">Click for a Surprise</button>
+
+        <footer>
+       Made my SamiStats        </footer>
+    </div>
+
+</body>
+</html>
